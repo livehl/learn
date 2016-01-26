@@ -1,4 +1,4 @@
-FROM scratch
+FROM progrium/busybox
 
 ADD ./rootfs.tar / 
 RUN mkdir -p /app
