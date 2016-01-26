@@ -1,0 +1,275 @@
+<meta title="简介" closeable="false" width="900px"/>
+<div style="padding: 20px;">
+    <h1 class="text-center text-success">
+        舒适的、简化的、友好的、全栈式的Javascript RIA开发框架
+    </h1>
+    <p class="lead text-info" style="padding: 20px 50px;">iSmartJs提供了一个完整的RIA开发的解决方案，这些解决方案使得您在进行RIA开发的过程中更加关注业务实现，使用iSmartJs可以在极大程度上减少javascript代码编写，从而很大程度上提高开发效率。</p>
+    <p class="text-center">
+        <a href="/index.html" class="btn btn-lg btn-primary text-size-24">完整登录DEMO</a>
+    </p>
+    <blockquote class="text-warning">
+        特此说明：UI样式部分“借鉴”了阿里云的控制台UI，希望大家能够对UI提出修改意见通过QQ群反馈给我们。<span class="label label-success">QQ群：51729123</span>
+    </blockquote>
+    <h2>iSmartJs的特点</h2>
+    <hr />
+    <h4>1、全栈式开发</h4>
+    <blockquote class="text-size-16 ">
+        <p class="text-warning">
+            iSmartJs是一个全栈式的开发框架，提供了诸如<code>AJAX动作监听</code>、<code>消息通知</code>、<code>页面动态加载</code>、<code>UI交互机制</code>等整体化的RIA架构，
+            控件的设计与使用可以在很大程度上减少js代码量，从而提高开发速度。
+        </p>
+    </blockquote>
+    <h4>2、模块化页面</h4>
+    <blockquote class="text-size-16 ">
+        iSmartJs提供了一个模块化页面的加载机制，这些模块化页面可能是用户管理页面、商品管理页面等，这些页面可以在需要的时候动态加载进来。
+        <p class="text-warning">
+            加载模块页面的时候，会对页面进行闭包封装处理，使得模块页面的脚本在一个独立的闭包域中，这样使得多个模块页面之间不用考虑变量名的唯一性，不用担心多个模块页面之间的变量污染。
+        </p>
+        <p>模块页面定义请参考<input type="button" class="btn btn-success btn-sm" value="window控件" s-click="S.open('widgets/window.html')" /> </p>
+    </blockquote>
+    <h4>3、控件组合</h4>
+    <blockquote class="text-size-16 ">
+        <p class="text-warning">
+            iSmartJs提供了一个小巧、精妙的核心用于组合控件，多个控件可以组合使用，使得元素拥有更为强大的功能，如我们可以使用<code
+                >loop</code>、<code>check</code>、<code>pagination</code>控件组合出<code>Grid</code>，并且该Grid拥有行选择功能。
+            并且基本上所有的控件显示都可以自定义，满足控件显示多样化的需求。
+        </p>
+    </blockquote>
+    <h4>4、无缝使用其他js框架</h4>
+    <blockquote class="text-size-16 ">
+        <p class="text-warning">
+            iSmartJs基于<code>bootstrap</code>和<code>jQuery</code>，可以无缝使用jQuery其他的插件，如<code>ztree</code>插件来构建树。
+        </p>
+    </blockquote>
+    <h4>5、友好的UI与页面交互</h4>
+    <blockquote class=" text-size-16 ">
+        <p>您现在看到页面是iSmartJs默认提供的布局，目前iSmartJs只提供了一个布局，另外的布局在规划设计中，两外您也可以定制自己的布局。iSmartJs亦提供了如下的UI细节实现：</p>
+        <ol class="text-warning">
+            <li><strong>ajax动作提示</strong>：在进行ajax操作的时候右上角会有ajax的动作提示，您可以通过打开新页面来观察一下。</li>
+            <li><strong>警告框</strong>：iSmartJs提供了更为友好的警告框弹出提示，<input type="button" class="btn btn-sm btn-success" value="演示一下" s-click="S.alert('感谢您使用iSmartJs')" /> </li>
+            <li><strong>页面通知</strong>：<input type="button" class="btn btn-sm btn-success" value="演示一下" s-click="S.notice('感谢您使用iSmartJs', 'success')" />，页面通知提供了<code>danger</code>，
+                <code>warning</code>，<code>success</code>，<code>info</code>级别的显示。</li>
+            <li><strong>弹出页面</strong>：我们会经常需要通过弹出层加载一个页面，如分类选择页面，商品编辑页面等，iSmartJs提供了一个这样的机制，通过这样的机制我们可以轻松写出很多可复用性的页面，在不同的地方调用。<input type="button" class="btn btn-sm btn-success" value="演示一下" s-click="S.popupOpen('doc/index.html')" /></li>
+        </ol>
+        还有更多的细节请关注iSmartJs插件和控件。
+    </blockquote>
+    <h2>快速入门</h2>
+    <hr />
+    <p class="lead">
+        github地址：<a href="https://github.com/CTOSPACE/ismartjs/" target="_blank">https://github.com/CTOSPACE/ismartjs/</a> 或者直接下载<a href="https://github.com/CTOSPACE/ismartjs/releases">release</a>版本
+    </p>
+    下载解压后，在<code>/ismartjs/dest</code>目录下即是一个基本的iSmartJs应用所需的全部文件，您可以在此基础上构建您的前端，目录结构说明如下：
+<pre class="text">
+dest/
+    |-- bootstrap3                  bootstrap文件所在目录
+    |-- css
+    |-- font-awesome
+    |-- html                        基础html文件目录
+        |-- dashboard.html
+        |-- login-panel.html        登录面板文件
+        |-- main-bottom.html        主界面的底部文件
+        |-- topbar-left.html        顶部栏的左边页面文件
+        |-- topbar-bottom.html      顶部栏的右边页面文件
+    |-- images
+    |-- js
+    |-- json
+        |-- menu.json               主布局文件加载的菜单文件，该文件是标准的json格式文件。
+    |-- layouts                     布局文件所在目录
+        |-- main0.html              默认的主页面布局文件
+    |-- boot.html                   ismartjs框架启动文件，该文件定义了加载主界面文件时的所需参数和登录判断逻辑等，您可以通过修改该文件作为登录页
+    |-- index.html
+    |-- ui-template.html            定义了ui的模板，如<code>dialog</code>，<code>alert</code>，<code>confirm</code>，<code>notice</code>等等ui模板。
+</pre>
+    <h2>主布局文件<code>layouts/main0.html</code></h2>
+    <hr />
+    <h4>1. 主布局文件的页面结构</h4>
+    <p class="lead">您看到的当前页面的布局就是main0.html提供的布局，该布局的基本结构如下：</p>
+    <p>
+        <img src="doc/images/main0.png" style="max-width: 100%;" />
+    </p>
+    <blockquote class="text-warning">
+        上述布局图有一个隐藏的<code>main-bottom.html</code>的区域，该区域可以放入一些版权信息或者底部导航信息，如果<code>bottomUrl</code>参数没有配置，则不会显示底部区域。
+    </blockquote>
+    <h4>2. 主布局文件所需参数的配置</h4>
+    <p class="lead">主布局文件所需的参数除了<code>menuUrl</code>之外，都有默认的定义，一般情况下，使用的时候只需要定义<code>menuUrl</code>参数即可。参数定义如下：</p>
+    <div s="sh" s-sh="{brush:'JScript'}">
+        {
+            menuUrl: null,
+            defaultTabIcon: "fa fa-file",
+            defaultMenuIcon: "",
+            topbarRightUrl: "html/topbar-right.html",
+            topbarLeftUrl: "html/topbar-left.html",
+            bottomUrl: null,
+            loginPanel: "html/login-panel.html",
+            tabActiveRefresh: true
+        }
+    </div>
+    <h4>参数说明</h4>
+    <table class="table table-bordered table-striped bs-param-table">
+        <tr>
+            <th>参数名</th>
+            <th>类型</th>
+            <th>默认值</th>
+            <th>说明</th>
+        </tr>
+        <tr>
+            <td>menuUrl</td>
+            <td>String</td>
+            <td>null</td>
+            <td>
+                该参数必须被定义，主布局需要通过该url加载menu。
+            </td>
+        </tr>
+        <tr>
+            <td>defaultTabIcon</td>
+            <td>String</td>
+            <td>fa fa-file</td>
+            <td>
+                模块页面默认的icon，该icon来自于<a target="_blank" href="https://fortawesome.github.io/Font-Awesome/">fortawesome</a>
+            </td>
+        </tr>
+        <tr>
+            <td>defaultMenuIcon</td>
+            <td>String</td>
+            <td></td>
+            <td>
+                菜单默认的icon，该icon来自于<a  target="_blank" href="https://fortawesome.github.io/Font-Awesome/">fortawesome</a>
+            </td>
+        </tr>
+        <tr>
+            <td>topbarRightUrl</td>
+            <td>String</td>
+            <td>html/topbar-right.html</td>
+            <td>
+                布局顶部栏右边加载的页面，可以在该页面里面定义顶部菜单等。
+            </td>
+        </tr>
+        <tr>
+            <td>topbarLeftUrl</td>
+            <td>String</td>
+            <td>html/topbar-left.html</td>
+            <td>
+                布局顶部栏左边加载的页面，可以在该页面里面定义logo等。
+            </td>
+        </tr>
+        <tr>
+            <td>bottomUrl</td>
+            <td>String</td>
+            <td></td>
+            <td>
+                底部加载的页面，默认不加载
+            </td>
+        </tr><tr>
+            <td>loginPanel</td>
+            <td>String</td>
+            <td>html/login-panel.html</td>
+            <td>
+                登录面板的页面，主框架会监听所有ajax的错误信息，如果监听到ajax的http错误代码为<code>403</code>的时候，则会打开该页面要求登录。
+            </td>
+        </tr><tr>
+            <td>tabActiveRefresh</td>
+            <td>boolean</td>
+            <td>true</td>
+            <td>
+                当打开一个单例的模块页面的时候，如果该页面已经被打开，并且该配置为<code>true</code>的时候，那么在激活已经打开的tab的同时，并刷新重载已经打开的页面，如果为<code>false</code>时则不会刷新重载，只会激活显示。
+            </td>
+        </tr>
+    </table>
+    <h4>3. 页面加载流程</h4>
+    <p>
+        <img src="doc/images/loading.png" style="max-width: 100%;" />
+    </p>
+    <h4>4. 自定义登录页面（修改boot.html）</h4>
+    <p class="lead"><code>boot.html</code>其实肩负着登录页的重任，您可以通过定制该页面来做一个漂亮的登录页，并且配置<code>layouts/main0.html</code>的加载参数。详情请参考<code>dest/boot.html</code>页面</p>
+    <h2>menu的格式</h2>
+    <hr />
+    <p class="lead">menu的加载url需要返回一个标准的json格式的menu定义，主框架文件通过该定义来显示menu，menu的定义如下：</p>
+    <div s="sh" s-sh="{brush:'JScript'}">
+        [
+            {
+                "id": "",
+                "title": "",
+                "url": "", //menu加载的模块页面url
+                "icon": "", //menu的icon
+                "open": true | false, //是否默认打开，如果为true默认打开，对于拥有children的菜单来说，当该值为false的时候，关闭显示子菜单列表。
+                "children": [ ... ] //子菜单，让子菜单不为空的时候，当前菜单的url定义无效。
+            }
+        ]
+    </div>
+    <h4>菜单定义示例</h4>
+    <div s="sh" s-sh="{brush:'JScript'}">
+        [
+            {
+                "id": "dashboard",
+                "title": "简介",
+                "url": "doc/index.html",
+                "icon": "fa fa-home",
+                "open": "true"
+            },
+            {
+                "id": "WIDGETS",
+                "title": "功能控件",
+                "children": [
+                    {
+                        "id": "WIDGETS_DATA",
+                        "title": "基础控件",
+                        "url": "doc/widgets/widget.html"
+                    },
+                    {
+                        "id": "WIDGETS_WINDOW",
+                        "title": "window",
+                        "url": "doc/widgets/window.html"
+                    },
+                    {
+                        "id": "WIDGETS_LOOP",
+                        "title": "列表(loop)",
+                        "url": "doc/widgets/loop.html"
+                    },
+                    {
+                        "id": "WIDGETS_TPL",
+                        "title": "模板(tpl)",
+                        "url": "doc/widgets/tpl.html"
+                    },
+                    {
+                        "id": "WIDGETS_nda",
+                        "title": "Name适配(nda)",
+                        "url": "doc/widgets/nda.html"
+                    },
+                    {
+                        "id": "WIDGETS_datac",
+                        "title": "子控件赋值(datac)",
+                        "url": "doc/widgets/datac.html"
+                    }
+                ]
+            }
+        ]
+    </div>
+    <h2>定义模块化页面</h2>
+    <hr />
+    <p class="lead">模块化页面的具体定义请参考<input type="button" class="btn btn-success btn-sm" value="window控件" s-click="S.open('widgets/window.html')" />，这里简要概述一下</p>
+    <div s="sh">
+        &lt;meta title="..." width="..." single='true|false' args='...' /&gt;
+        &lt;div&gt;
+            ...
+        &lt;/div&gt;
+        &lt;script type="text/javascript" &gt;
+            ...
+        &lt;/script&gt;
+    </div>
+    <h2>浏览器兼容性</h2>
+    <blockquote class="text-warning">
+        万恶的IE已经被iSmartJs抛弃了，支持ie10+，当然，完美支持Microsoft edge
+<pre style="border: none; background: none;">
+Chrome              ✔
+Firefox             ✔
+Safari              ✔
+Opera               ✔
+IE 10+              ✔
+Microsoft edge      ✔
+</pre>
+    </blockquote>
+    <div class="text-center" id="statDiv"></div>
+</div>
+<script type="text/javascript">
+    S.N("#statDiv").append($("#cnzz_stat_icon_1000525011"));
+</script>

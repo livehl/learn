@@ -1,0 +1,155 @@
+[
+  {
+    "id": "dashboard",
+    "title": "简介",
+    "url": "doc/index.html",
+    "icon": "fa fa-home",
+    "open": "true"
+  },
+  {
+    "id": "demo",
+    "title": "DEMO",
+    "children": [
+      {
+        "id": "DEMO_CRUD",
+        "title": "DEMO(CRUD)",
+        "url": "doc/demo/crud.html",
+        "open": "true"
+      }
+    ]
+  },
+  {
+    "id": "API",
+    "title": "API",
+    "children": [
+      {
+        "id": "API_POPUPOPEN",
+        "title": "弹出页面",
+        "url": "doc/api/popupOpen.html"
+      },
+      {
+        "id": "API_UPLOAD",
+        "title": "文件上传",
+        "url": "doc/api/upload.html"
+      },
+      {
+        "id": "API_CORE",
+        "title": "核心API",
+        "url": "doc/api/core.html"
+      },
+      {
+        "id": "API_interaction",
+        "title": "交互API",
+        "url": "doc/api/interaction.html"
+      },
+      {
+        "id": "API_AJAX",
+        "title": "AJAX API",
+        "url": "doc/api/ajax.html"
+      }
+    ]
+  },
+  {
+    "id": "WIDGETS",
+    "title": "功能控件",
+    "children": [
+      {
+        "id": "WIDGETS_DATA",
+        "title": "基础控件",
+        "url": "doc/widgets/widget.html"
+      },
+      {
+        "id": "WIDGETS_WINDOW",
+        "title": "window",
+        "url": "doc/widgets/window.html"
+      },
+      {
+        "id": "WIDGETS_LOOP",
+        "title": "列表(loop)",
+        "url": "doc/widgets/loop.html"
+      },
+      {
+        "id": "WIDGETS_TPL",
+        "title": "模板(tpl)",
+        "url": "doc/widgets/tpl.html"
+      },
+      {
+        "id": "WIDGETS_nda",
+        "title": "Name适配(nda)",
+        "url": "doc/widgets/nda.html"
+      },
+      {
+        "id": "WIDGETS_datac",
+        "title": "子控件赋值(datac)",
+        "url": "doc/widgets/datac.html"
+      },
+      {
+        "id": "WIDGETS_check",
+        "title": "选择控件(check)",
+        "url": "doc/widgets/check.html"
+      }
+    ]
+  },
+  {
+    "id": "UI_WIDGETS",
+    "title": "UI控件",
+    "children": [
+      {
+        "id": "UI_WIDGETS_FORM",
+        "title": "表单",
+        "url": "doc/widgets/form.html"
+      },
+      {
+        "id": "UI_WIDGETS_VALID",
+        "title": "表单验证",
+        "url": "doc/widgets/valid.html"
+      },
+      {
+        "id": "UI_WIDGETS_PAGINATION",
+        "title": "分页",
+        "url": "doc/widgets/pagination.html"
+      },
+      {
+        "id": "UI_WIDGETS_TOOLTIP",
+        "title": "工具提示(tooltip)",
+        "url": "doc/widgets/tooltip.html"
+      },
+      {
+        "id": "UI_WIDGETS_SELECT",
+        "title": "下拉列表(select)",
+        "url": "doc/widgets/select.html"
+      },
+      {
+        "id": "UI_WIDGETS_DATETIMEPICKER",
+        "title": "日期选择器",
+        "url": "doc/widgets/datetimepicker.html"
+      },
+      {
+        "id": "UI_WIDGETS_CONTEXTMENU",
+        "title": "右键菜单",
+        "url": "doc/widgets/contextmenu.html"
+      },
+      {
+        "id": "UI_WIDGETS_AFFIX",
+        "title": "affix",
+        "url": "doc/widgets/affix.html"
+      },
+      {
+        "id": "UI_WIDGETS_POPOVER",
+        "title": "弹出框(popover)",
+        "url": "doc/widgets/popover.html"
+      }
+    ]
+  },
+  {
+    "id": "UI_STYLE",
+    "title": "UI样式",
+    "children": [
+      {
+        "id": "UI_FORM_ELEMENTS",
+        "title": "表单元素",
+        "url": "doc/widgets/form-elements.html"
+      }
+    ]
+  }
+]
