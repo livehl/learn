@@ -4,6 +4,6 @@ RUN mkdir -p /app
 WORKDIR /app
 COPY ./learn /app/
 COPY ./public /public
-EXPOSE 80
+EXPOSE 9100
 
 CMD ["/app/learn"]
